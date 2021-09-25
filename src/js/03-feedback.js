@@ -1,4 +1,4 @@
-import throttle from 'lodash.throttle';
+import _throttle from '../../node_modules/lodash.throttle';
 
 const form = document.querySelector(".feedback-form");
 const formEmail = document.querySelector('[name="email"]')
