@@ -1,11 +1,12 @@
 // Add imports above this line
-import { galleryItems } from './gallery-items';
+import { galleryItems } from './gallery-items.js';
 // Change code below this line
 // Opisany w dokumentacji
 //import SimpleLightbox from 'simplelightbox';
 import _default from '../../node_modules/simplelightbox/dist/simple-lightbox'
 // Dodatkowy import stylów
 import '../../node_modules/simplelightbox/dist/simple-lightbox.min.css'
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 
 console.log(galleryItems);
 
