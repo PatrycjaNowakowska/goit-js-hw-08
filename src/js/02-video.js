@@ -1,13 +1,8 @@
+import Player from '../../node_modules/@vimeo/player';
+import throttle from '../../node_modules/lodash.throttle';
 
-import '../../node_modules/@vimeo/player';
-import { throttle } from 'lodash.throttle';
-
-const qs = (selector) => document.querySelector(selector);
-
-const iframe = qs("#video-player");
-
-//let iframe = document.querySelector('iframe');
-let player = new Vimeo.Player(iframe);
+let iframe = document.querySelector('iframe');
+let player = new Player(iframe);
 
 player.on('play', function() {
     console.log('played the video!');
