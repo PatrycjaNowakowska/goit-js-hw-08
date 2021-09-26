@@ -32,4 +32,4 @@ var i=require("./debounce"),e=require("./isObject"),n="Expected a function";func
 },{"./debounce":"CXfR","./isObject":"u9vI"}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash/throttle.js"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),r=document.querySelector('[name="email"]'),l=document.querySelector('[name="message"]'),o="feedback-form-state",s=()=>{let e={email:`${r.value}`,message:`${l.value}`};localStorage.setItem(o,JSON.stringify(e))},c=()=>{try{r.value=JSON.parse(localStorage.getItem(o)).email,l.value=JSON.parse(localStorage.getItem(o)).message}catch{console.log("There is no data. Please enter data!")}},n=e=>{e.preventDefault();const{elements:{email:t,message:r}}=e.currentTarget;console.log(JSON.parse(localStorage.getItem(o))),a.reset(),e.currentTarget.reset(),localStorage.clear()};c(),a.addEventListener("input",(0,e.default)(s,500)),a.addEventListener("submit",n);
 },{"lodash/throttle.js":"Ywd4"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.52857bd3.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.52857bd3.js.map
